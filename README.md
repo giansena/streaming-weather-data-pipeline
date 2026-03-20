@@ -68,3 +68,72 @@ The project is divided into two main parts:
 ## Author
 
 Gian Sena
+
+
+# ESPAÑOL
+
+# Pipeline de Datos Climáticos en Tiempo Real
+
+## Descripción del Proyecto
+Este proyecto demuestra el diseño e implementación de un pipeline de ingeniería de datos que consume datos meteorológicos en tiempo real desde una API externa, los procesa utilizando Python y los almacena en una base de datos relacional.
+
+**Importante: Este proyecto está destinado únicamente a fines de portfolio. Debido a restricciones de la API y configuración del entorno, puede que no funcione directamente en otra máquina. El objetivo es mostrar la arquitectura, la lógica y las habilidades en pipelines de datos a través del código.**
+
+## Objetivos
+* Consumir datos en tiempo real desde una API meteorológica
+* Construir un pipeline de datos automatizado usando Python
+* Almacenar datos estructurados en una base de datos MySQL
+* Simular un flujo de trabajo real de ingeniería de datos
+
+## Tecnologías Utilizadas
+* Python → Extracción y procesamiento de datos
+* Requests / JSON → Consumo de la API
+* MySQL → Almacenamiento de datos
+* SQL → Modelado de datos y consultas
+* HTML / CSS / JavaScript → Visualización simple en frontend
+
+## Arquitectura
+El proyecto está dividido en dos partes principales:
+* Pipeline de Datos (/pipeline)
+* Se conecta a la API meteorológica
+* Extrae datos en tiempo real
+* Transforma JSON en formato estructurado
+* Inserta los datos en MySQL
+
+![First Screeshot](./images/img1.png)
+![Second Screeshot](./images/img3.png)
+
+## Frontend (/frontend)
+* Muestra los datos del clima
+* Utiliza JavaScript para obtener y renderizar la información
+* Interfaz simple para visualización
+
+![Third Screeshot](./images/img2.png)
+
+## Flujo de Datos
+* Se realiza una solicitud a la API para obtener datos del clima
+* Los datos se reciben en formato JSON
+* Python procesa y limpia los datos
+* Los datos estructurados se insertan en MySQL
+* El frontend consume y muestra los datos
+
+## Aprendizajes Clave
+* Construcción de pipelines de datos de extremo a extremo
+* Trabajo con fuentes de datos en tiempo real
+* Integración de APIs y transformación de datos
+* Diseño de bases de datos e inserción de datos
+* Conexión entre procesos backend y frontend
+
+## Limitaciones
+* La API key no está incluida (por razones de seguridad)
+* Las variables de entorno no están configuradas
+* El pipeline puede no funcionar sin la configuración adecuada
+
+## Mejoras Futuras
+* Automatizar la ejecución del pipeline (cron / scheduler)
+* Desplegar la base de datos en la nube (AWS / GCP)
+* Agregar dashboards de visualización de datos (Power BI / Tableau)
+* Implementar manejo de errores y logging
+
+## Autor
+Gian Sena
