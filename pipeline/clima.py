@@ -2,7 +2,7 @@ import requests
 import mysql.connector
 import time
 
-api_key = "bd3e4c6dc9a3d39966f5de6defc1554f"
+api_key = "----"
 
 cities = [
     "Cordoba,AR",
